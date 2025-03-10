@@ -5,6 +5,9 @@ sap.ui.define([
 
     return Controller.extend("zproj01emp.controller.View1", {
         onInit() {
+        },
+        cicdCheck : function(){
+            sap.m.MessageToast.show("CICD CHECKS RUNNING");
         }
     });
 });
