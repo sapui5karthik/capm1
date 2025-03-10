@@ -4,6 +4,7 @@
     <Page id="page" title="{i18n>title}">
     <content>
     <Button text="CICD Check" press="cicdCheck" />
+    <Button text="TestButton" />
     <Table items="{path:'/ReadEmpSet'}" growing="true" growingScrollToLoad="false" growingThreshold="10" >
             <columns>
                 <Column>
