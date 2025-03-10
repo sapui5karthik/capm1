@@ -1,0 +1,35 @@
+<mvc:View controllerName="zproj01emp.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+    <content>
+    <Table items="{path:'/ReadEmpSet'}" growing="true" growingScrollToLoad="false" growingThreshold="10" >
+            <columns>
+                <Column>
+                    <Text text="EMPID" />
+                </Column>   
+                <Column>
+                    <Text text="EMPNAME" />
+                </Column>
+                <Column>
+                    <Text text="EMPGENDER" />
+                </Column>
+                <Column>
+                    <Text text="EMPSAL" />
+                </Column>
+            </columns>    
+            <items>
+                <ColumnListItem>
+                    <cells>
+                        <Text text="{empid}" />
+                        <Text text="{empname}" />
+                        <Text text="{empgender}" />
+                        <Text text="{empsal}" />
+                    </cells>
+                </ColumnListItem>
+            </items>
+</Table>
+
+    </content>
+    </Page>
+</mvc:View>
